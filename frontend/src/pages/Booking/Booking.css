@@ -1,0 +1,116 @@
+.booking-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .booking-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2d3436;
+  }
+  
+  .form-group {
+    margin-bottom: 2rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #2d3436;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group select {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group select:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 0 3px rgba(255,107,107,0.2);
+    outline: none;
+  }
+  
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+  
+  .react-datepicker__input-container input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .time-slots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+  
+  .time-slot {
+    padding: 0.8rem;
+    background: #f8f9fa;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .time-slot:hover {
+    border-color: #ff6b6b;
+    transform: translateY(-2px);
+  }
+  
+  .time-slot.selected {
+    background: #ff6b6b;
+    color: white;
+    border-color: #ff6b6b;
+  }
+  
+  .book-button {
+    width: 100%;
+    padding: 1rem;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .book-button:hover {
+    background: #ff5252;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .booking-container {
+      padding: 1rem;
+    }
+    
+    .time-slots {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

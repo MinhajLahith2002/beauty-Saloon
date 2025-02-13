@@ -1,0 +1,60 @@
+.footer {
+    background: #2d3436;
+    color: white;
+    padding: 3rem 5% 2rem;
+    margin-top: auto;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    animation: fadeInUp 0.8s ease;
+  }
+  
+  .brand-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .logo-icon {
+    font-size: 2.5rem;
+    color: #ff6b6b;
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+    color: #dfe6e9;
+  }
+  
+  .copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #b2bec3;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      text-align: center;
+    }
+    
+    .brand-info {
+      justify-content: center;
+    }
+  }
